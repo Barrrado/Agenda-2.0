@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<title>Formulário e Tabela</title>
+
+</head>
+<body>
+<div id="Estilo-Vidro">
+<h1>Agenda de Clientes</h1>
+
+<form id="myForm">
+  <input type="text" required id="nome" name="nome" placeholder="Nome"><br>
+  <input type="tel" pattern="[0-9]{2} [0-9]{4}-[0-9]{4}"  required  id="idade" name="idade" placeholder="Telefone"><br><br>
+  <button id="bto-adicionar" type="button" onclick="adicionarLinha()"></button>
+</form>
+
+<h1>Lista de Clientes</h1>
+<table id="myTable">
+  <tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>Ações</th>
+  </tr>
+</table>
+
+<button id="saveButton" style="display: none;" onclick="salvarAlteracoes()">Salvar Alterações</button>
+<ol id="savedDataList"></ol>
+
+</div>
+
+<script src="main.js">
+</script>
+</body>
+</html>
