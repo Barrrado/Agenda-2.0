@@ -19,7 +19,6 @@ function adicionarLinha(){
         cell3.innerHTML = `<button id="bto-editar" onclick="editarLinha(this)"></button>`;
 
         linhasTabela.push({ nome, tel }); // Armazena os dados da nova linha
-        nome1.push(nome.value);
 
         document.getElementById("nome").value = "";
         document.getElementById("idade").value = "";
