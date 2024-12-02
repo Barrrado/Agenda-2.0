@@ -77,7 +77,7 @@ function salvarAlteracoes() {
   savedDataList.innerHTML = ''; // Limpa a lista antes de adicionar novos itens
   linhasTabela.forEach(item => {
     const listItem = document.createElement("li");
-    listItem.textContent = `Nome: ${item.nome} ------  Telefone: ${item.tel}`;
+    listItem.textContent = `${item.nome}   ------  Tel: ${item.tel}`;
     savedDataList.appendChild(listItem);
     document.getElementById("savedDataList").style.display="Block";
   });
